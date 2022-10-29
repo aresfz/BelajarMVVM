@@ -1,6 +1,6 @@
 package com.chirikualii.materiapi.data.dummy
 
-import com.chirikualii.materiapi.data.model.Movie
+import com.chirikualii.materiapi.data.remote.model.Movie
 
 object DataDummy {
     val listMovie = listOf(

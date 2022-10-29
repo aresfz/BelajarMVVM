@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.chirikualii.materiapi.data.model.Movie
+import com.chirikualii.materiapi.data.remote.model.Movie
 import com.chirikualii.materiapi.databinding.ItemMovieBinding
 
 class MovieListAdapter :RecyclerView.Adapter<MovieListAdapter.Holder>() {
@@ -12,7 +12,7 @@ class MovieListAdapter :RecyclerView.Adapter<MovieListAdapter.Holder>() {
     private val listData = mutableListOf<Movie>()
     class Holder(val binding : ItemMovieBinding) : RecyclerView.ViewHolder(binding.root){
 
-        fun bindView(data:Movie){
+        fun bindView(data: Movie){
 
             binding.tvTitle.text = data.title
             binding.tvGenre.text = data.genre

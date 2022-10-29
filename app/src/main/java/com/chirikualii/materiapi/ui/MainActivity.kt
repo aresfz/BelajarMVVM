@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import com.chirikualii.materiapi.R
 import com.chirikualii.materiapi.data.dummy.DataDummy
-import com.chirikualii.materiapi.data.model.Movie
+import com.chirikualii.materiapi.data.remote.model.Movie
 import com.chirikualii.materiapi.data.remote.ApiClient
 import com.chirikualii.materiapi.databinding.ActivityMainBinding
 import com.chirikualii.materiapi.ui.adapter.MovieListAdapter
@@ -27,8 +27,6 @@ class MainActivity : AppCompatActivity() {
         adapter = MovieListAdapter()
         binding.rvMovie.adapter = adapter
 
-        //inset data dummy
-        loadDataFromApi()
 
 
     }

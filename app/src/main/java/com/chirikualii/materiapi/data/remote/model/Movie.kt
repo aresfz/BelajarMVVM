@@ -1,4 +1,4 @@
-package com.chirikualii.materiapi.data.model
+package com.chirikualii.materiapi.data.remote.model
 
 data class Movie (
     val title:String,

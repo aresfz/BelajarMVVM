@@ -43,6 +43,11 @@ class MainActivity : AppCompatActivity() {
             adapter.addItem(it)
         }
 
+        mViewModel.isLoading.observe(this){ isLoading ->
+            if(isLoading){
+                binding.progressBar.visibility = View.VISIBLE
+            }
+        }
     }
 
 
